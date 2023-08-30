@@ -38,12 +38,10 @@ fetch('https://reqres.in/api/users?per_page=12')
     isLoading = true
     console.log(Object.keys(data[0]))
 })
-        
 .catch((error) => {
     isLoading = true
     console.log('Ошибка', error)
 })
-
 .finally(() => {
     isLoading = false
 })
